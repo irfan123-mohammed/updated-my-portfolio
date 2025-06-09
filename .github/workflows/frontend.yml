@@ -1,0 +1,24 @@
+name: Deploy Frontend to S3
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AKIAQZ2IRCXZL2IJSR5E }}
+          aws-secret-access-key: ${{ secrets.8ua4m/LILS+/2WU6LHDq+jrXok1Zj0zNQzO0Zow+ }}
+          aws-region: ap-south-1  # update your region here
+
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync . s3://portfolio-irfan --delete --exclude ".git/*" --exclude ".github/*"
