@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohammed Irfan | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS for animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6 sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold tracking-wide">Mohammed Irfan</h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg">
+          <li><a href="#about" class="hover:text-cyan-400 transition duration-300">About</a></li>
+          <li><a href="#projects" class="hover:text-cyan-400 transition duration-300">Projects</a></li>
+          <li><a href="#skills" class="hover:text-cyan-400 transition duration-300">Skills</a></li>
+          <li><a href="#contact" class="hover:text-cyan-400 transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-28 bg-white" data-aos="fade-up">
+    <h2 class="text-5xl font-extrabold mb-4 text-gray-900">Hi, I'm Mohammed Irfan</h2>
+    <p class="text-2xl text-gray-600 mb-6">
+      <span id="typing" class="text-cyan-600 font-semibold"></span>
+    </p>
+    <a href="#contact" class="inline-block bg-cyan-500 text-white px-8 py-3 rounded-full hover:scale-105 hover:bg-cyan-600 transition transform duration-300 shadow-lg">Hire Me</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto py-20 px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+    <p class="text-lg leading-relaxed text-center text-gray-700">I'm a web developer passionate about building clean and responsive websites. I enjoy turning ideas into reality using code, animations, and user-friendly designs.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-100 py-20" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-bold mb-2">Simple Website</h3>
+          <p class="text-gray-600">A basic responsive website built with HTML and CSS.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-bold mb-2">To-Do App</h3>
+          <p class="text-gray-600">A JavaScript-powered task manager app with live editing and delete functionality.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-bold mb-2">Coming Soon</h3>
+          <p class="text-gray-600">Stay tuned for more exciting and interactive projects!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-4xl mx-auto py-20 px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-8 text-center">Skills</h2>
+    <div class="grid grid-cols-2 gap-6 text-lg text-gray-700">
+      <div><strong>HTML:</strong> ⭐⭐⭐⭐⭐</div>
+      <div><strong>CSS:</strong> ⭐⭐⭐⭐☆</div>
+      <div><strong>JavaScript:</strong> ⭐⭐⭐⭐☆</div>
+      <div><strong>Git & GitHub:</strong> ⭐⭐⭐⭐☆</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-20" data-aos="fade-up">
+    <div class="max-w-md mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-6 text-center">Contact</h2>
+      <form class="space-y-4" id="contactForm">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl shadow-sm" required />
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl shadow-sm" required />
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-xl shadow-sm" required></textarea>
+        <button type="submit" class="w-full bg-cyan-500 text-white py-3 rounded-xl hover:bg-cyan-600 transition shadow-md">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+    <p class="text-sm">© 2025 Mohammed Irfan. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
